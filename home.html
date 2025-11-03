@@ -24,31 +24,31 @@
         <div class="timetable">
             <div class="container">
                 <div class="cell"></div>
-                <div class="cell">
+                <div class="cell cell-date">
                     <p class="date">3</p>
                     <p>MON</p>
                 </div>
-                <div class="cell">
+                <div class="cell cell-date">
                     <p class="date">4</p>
                     <p>TUE</p>
                 </div>
-                <div class="cell">
+                <div class="cell cell-date">
                     <p class="date">5</p>
                     <p>WED</p>
                 </div>
-                <div class="cell">
+                <div class="cell cell-date">
                     <p class="date">6</p>
                     <p>THU</p>
                 </div>
-                <div class="cell">
+                <div class="cell cell-date">
                     <p class="date">7</p>
                     <p>FRI</p>
                 </div>
-                <div class="cell">
+                <div class="cell cell-date">
                     <p class="date">8</p>
                     <p>SAT</p>
                 </div>
-                <div class="cell">
+                <div class="cell cell-date">
                     <p class="date">9</p>
                     <p>SUN</p>
                 </div>
@@ -173,7 +173,21 @@
                 <button class="cell cell-btn"></button>
                 <button class="cell cell-btn"></button>
                 <button class="cell cell-btn"></button>
+
+
+                <div id="eventAdder" class="hidden">
+                    <input type="text" id="title" placeholder="Add Title">
+                    <div class="color-pick">
+                        <p>Choose Color</p>
+                        <input type="color" name="" id="color">
+                    </div>
+                    <div class="action">
+                        <button class="action-btn" id="discard">Discard</button>
+                        <button class="action-btn" id="save">Save</button>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
     <script src="js/home.js"></script>
