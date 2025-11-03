@@ -4,7 +4,7 @@ const password = document.querySelector('#password')
 
 
 btn.addEventListener('click', function(){
-    if (id.value == 250118021 && password.value == "Id080112554005"){
+    if (id.value == 250118021 && password.value == "qwerty"){
         window.location.href = "home.html";
     }else{
         alert("ID or Password is incorrect")
