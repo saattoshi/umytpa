@@ -85,8 +85,15 @@ body{
                     border-radius: 15px;
                     align-self: center;
                     font-size: 1.5em;
-                    margin-bottom: .2em;
+                    margin-bottom: .2em; 
                 }
+            }
+
+            .cell-btn{
+                background-color: #f4f4f4;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
             }
 
             .time{

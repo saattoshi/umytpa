@@ -80,6 +80,12 @@ body {
   font-size: 1.5em;
   margin-bottom: 0.2em;
 }
+.control-panel .timetable .container .cell-btn {
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
 .control-panel .timetable .container .time {
   font-size: 0.75em;
 }
