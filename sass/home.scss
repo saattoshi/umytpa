@@ -9,12 +9,20 @@ body{
 }
 
 .hidden{
-    visibility: hidden;
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: transform 3s ease;
 }
 
 .active{
+    display: block;
+    opacity: 1;
     visibility: visible;
+    transform: translateY(0);
+    transition: transform 3s ease;
 }
+
 .navbar{
     background-color: #fff;
     width: 100%;
@@ -110,7 +118,7 @@ body{
             }
 
             .cell-btn{
-                background-color: #f4f4f4;
+                background-color: #f9f9f9; 
                 border: none;
                 border-radius: 15px;
                 cursor: pointer;

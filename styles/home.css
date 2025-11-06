@@ -9,11 +9,18 @@ body {
 }
 
 .hidden {
-  visibility: hidden;
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: transform 3s ease;
 }
 
 .active {
+  display: block;
+  opacity: 1;
   visibility: visible;
+  transform: translateY(0);
+  transition: transform 3s ease;
 }
 
 .navbar {
@@ -100,7 +107,7 @@ body {
   text-align: center;
 }
 .control-panel .timetable .container .cell-btn {
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   border: none;
   border-radius: 15px;
   cursor: pointer;
