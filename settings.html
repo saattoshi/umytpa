@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDU University | Settings</title>
+    <script src="https://kit.fontawesome.com/406d692b05.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/setting.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="home.html">
+                <img src="./images/sdu-logo.png" alt="">
+            </a>
+            <div class="links">
+                <a href="friends.html" class=""><i class="fa-solid fa-user-group" style="color: #1E2151;"></i>Friends</a>
+                <a href="settings.html" class="current"><i class="fa-solid fa-gear" style="color: #1E2151;"></i>Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="settings-container">
+        <div class="profile-section">
+            <div class="profile-avatar">
+                <div class="avatar-placeholder">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="60" cy="45" rx="25" ry="28" fill="#1E2151"/>
+                        <ellipse cx="60" cy="110" rx="45" ry="35" fill="#1E2151"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="profile-info">
+                <h1 class="profile-name">Khalid Ibn Walid</h1>
+                <p class="profile-department">Information Systems</p>
+            </div>
+        </div>
+
+        <div class="details-grid">
+            <div class="detail-row">
+                <div class="detail-label">Student ID</div>
+                <div class="detail-value">250118021</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">Birth Date</div>
+                <div class="detail-value">12.01.2008</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">Advisor</div>
+                <div class="detail-value">Akniet Mussakhan</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">Email</div>
+                <div class="detail-value">alisherkanadiI@gmail.com</div>
+            </div>
+            <div class="detail-row">
+                <div class="detail-label">Init. Pass.</div>
+                <div class="detail-value">VGHAK092</div>
+            </div>
+        </div>
+
+        <div class="theme-section">
+            <label for="theme-select" class="theme-label">App Theme</label>
+            <select id="theme-select" class="theme-select">
+                <option value="default">Defaults</option>
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>

@@ -10,16 +10,26 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <img src="./images/sdu-logo.png" alt="">
+            <a href="home.html">
+                <img src="./images/sdu-logo.png" alt="">
+            </a>
             <div class="links">
-                <a href="#"><i class="fa-solid fa-user-group" style="color: #1E2151;"></i>Friends</a>
-                <a href="#"><i class="fa-solid fa-gear" style="color: #1E2151;"></i>Profile</a>
+                <a href="friends.html"><i class="fa-solid fa-user-group" style="color: #1E2151;"></i>Friends</a>
+                <a href="settings.html"><i class="fa-solid fa-gear" style="color: #1E2151;"></i>Profile</a>
             </div>
         </div>
     </nav>
 
     <div class="control-panel">
-        <div class="assignments"></div>
+        <div class="tasks">
+            <div class="container">
+                <h2 class="">Assignments</h2>
+                <div class="assignment"></div>
+                <div class="assignment"></div>
+                <div class="assignment"></div>
+                <button id="new-assignment">+</button>
+            </div>
+        </div>
 
         <div class="timetable">
             <div class="container">
@@ -187,8 +197,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
     </div>
     <script src="js/home.js"></script>
 </body>

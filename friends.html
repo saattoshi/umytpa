@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDU University | Friends</title>
+    <link rel="stylesheet" href="styles/friends.css">
+    <script src="https://kit.fontawesome.com/406d692b05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="home.html">
+                <img src="./images/sdu-logo.png" alt="">
+            </a>
+            <div class="links">
+                <a href="friends.html" class="current"><i class="fa-solid fa-user-group" style="color: #1E2151;"></i>Friends</a>
+                <a href="settings.html" class=""><i class="fa-solid fa-gear" style="color: #1E2151;"></i>Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="friends-layout">
+        <div class="friends-sidebar">
+            <div class="sidebar-header">
+                <div class="back-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h2 class="sidebar-title">FRIENDS</h2>
+            </div>
+            
+            <div class="friends-list">
+                <div class="friend-item active" onclick="selectFriend('Kuanyshbay Assel')">
+                    <div class="friend-avatar"></div>
+                    <span class="friend-name">Kuanyshbay Assel</span>
+                    <button class="friend-menu">...</button>
+                </div>
+                <div class="friend-item" onclick="selectFriend('Kadyrbay Kaussar')">
+                    <div class="friend-avatar"></div>
+                    <span class="friend-name">Kadyrbay Kaussar</span>
+                    <button class="friend-menu">...</button>
+                </div>
+                <div class="friend-item" onclick="selectFriend('Kanadil Aliwer')">
+                    <div class="friend-avatar"></div>
+                    <span class="friend-name">Kanadil Aliwer</span>
+                    <button class="friend-menu">...</button>
+                </div>
+                <div class="friend-item" onclick="selectFriend('Elon Musk')">
+                    <div class="friend-avatar"></div>
+                    <span class="friend-name">Elon Musk</span>
+                    <button class="friend-menu">...</button>
+                </div>
+            </div>
+
+            <button class="add-friend-btn">+</button>
+        </div>
+
+        <div class="friends-calendar-area">
+            <div class="calendar-header">
+                <div class="calendar-nav">
+                    <div class="week-dates">
+                        <div class="date-col">
+                            <div class="date-number">20</div>
+                            <div class="date-day">MON</div>
+                        </div>
+                        <div class="date-col">
+                            <div class="date-number">21</div>
+                            <div class="date-day">TUE</div>
+                        </div>
+                        <div class="date-col">
+                            <div class="date-number">22</div>
+                            <div class="date-day">WED</div>
+                        </div>
+                        <div class="date-col">
+                            <div class="date-number">23</div>
+                            <div class="date-day">THU</div>
+                        </div>
+                        <div class="date-col">
+                            <div class="date-number">24</div>
+                            <div class="date-day">FRI</div>
+                        </div>
+                        <div class="date-col">
+                            <div class="date-number">25</div>
+                            <div class="date-day">SAT</div>
+                        </div>
+                        <div class="date-col">
+                            <div class="date-number">26</div>
+                            <div class="date-day">SUN</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empty-state">
+                <p>SELECT ONE OF YOUR FRIENDS</p>
+            </div>
+
+            <div class="calendar-grid" style="display: none;">
+                <div class="time-column">
+                    <div class="time-slot">08:30<br>09:30</div>
+                    <div class="time-slot">09:30<br>10:30</div>
+                    <div class="time-slot">10:30<br>11:30</div>
+                    <div class="time-slot">11:30<br>12:30</div>
+                    <div class="time-slot">12:30<br>13:30</div>
+                    <div class="time-slot">13:30<br>14:30</div>
+                    <div class="time-slot">14:30<br>15:30</div>
+                    <div class="time-slot">15:30<br>16:30</div>
+                    <div class="time-slot">16:30<br>17:30</div>
+                    <div class="time-slot">17:30<br>18:30</div>
+                    <div class="time-slot">18:30<br>19:30</div>
+                    <div class="time-slot">19:30<br>20:30</div>
+                </div>
+
+                <div class="schedule-columns">
+                    <div class="day-column">
+                        <div class="event-slot" style="grid-row: 1 / 3;">
+                            <div class="event">
+                                <div class="event-title">Turkish B1</div>
+                                <div class="event-room">H 204</div>
+                                <div class="event-details">details...</div>
+                            </div>
+                        </div>
+                        <div class="event-slot" style="grid-row: 3 / 5;">
+                            <div class="event">
+                                <div class="event-title">Turkish B1</div>
+                                <div class="event-room">H 204</div>
+                                <div class="event-details">details...</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day-column">
+                        <div class="event-slot" style="grid-row: 3 / 5;">
+                            <div class="event">
+                                <div class="event-title">Turkish B1</div>
+                                <div class="event-room">H 204</div>
+                                <div class="event-details">details...</div>
+                            </div>
+                        </div>
+                        <div class="event-slot" style="grid-row: 7 / 9;">
+                            <div class="event">
+                                <div class="event-title">Turkish B1</div>
+                                <div class="event-room">H 204</div>
+                                <div class="event-details">details...</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day-column">
+                        <div class="event-slot" style="grid-row: 3 / 5;">
+                            <div class="event">
+                                <div class="event-title">Turkish B1</div>
+                                <div class="event-room">H 204</div>
+                                <div class="event-details">details...</div>
+                            </div>
+                        </div>
+                        <div class="event-slot" style="grid-row: 9 / 11;">
+                            <div class="event highlighted">
+                                <div class="event-title">Turkish B1</div>
+                                <div class="event-room">H 204</div>
+                                <div class="event-details">details...</div>
+                                <div class="event-tooltip">Kausar Kadyrbay</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day-column">
+                        <div class="event-slot" style="grid-row: 5 / 7;">
+                            <div class="event">
+                                <div class="event-title">Turkish B1</div>
+                                <div class="event-room">H 204</div>
+                                <div class="event-details">details...</div>
+                            </div>
+                        </div>
+                        <div class="event-slot" style="grid-row: 7 / 9;">
+                            <div class="event">
+                                <div class="event-title">Turkish B1</div>
+                                <div class="event-room">H 204</div>
+                                <div class="event-details">details...</div>
+                            </div>
+                        </div>
+                        <div class="event-slot" style="grid-row: 7 / 9;">
+                            <div class="event">
+                                <div class="event-title">Turkish B1</div>
+                                <div class="event-room">H 204</div>
+                                <div class="event-details">details...</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day-column">
+                        <div class="event-slot" style="grid-row: 1 / 3;">
+                            <div class="event">
+                                <div class="event-title">Turkish B1</div>
+                                <div class="event-room">H 204</div>
+                                <div class="event-details">details...</div>
+                            </div>
+                        </div>
+                        <div class="event-slot" style="grid-row: 5 / 7;">
+                            <div class="event">
+                                <div class="event-title">Turkish B1</div>
+                                <div class="event-room">H 204</div>
+                                <div class="event-details">details...</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day-column">
+                        <div class="event-slot" style="grid-row: 3 / 5;">
+                            <div class="event">
+                                <div class="event-title">Turkish B1</div>
+                                <div class="event-room">H 204</div>
+                                <div class="event-details">details...</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day-column"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/friends.js"></script>
+</body>
+</html>

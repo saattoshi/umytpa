@@ -30,7 +30,7 @@ body {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 0px 5px #ccc;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
 }
 .navbar .container {
   width: 95%;
@@ -39,8 +39,8 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.navbar img {
-  width: 8%;
+.navbar .container a img {
+  width: 20%;
 }
 .navbar .links {
   display: flex;
@@ -59,9 +59,13 @@ body {
   font-size: 1.5em;
 }
 
+.control-panel {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 1;
+  gap: 0;
+}
 .control-panel .timetable {
-  position: relative;
-  left: 20%;
   background-color: #fff;
   height: 100%;
   padding: 1em;
@@ -70,10 +74,11 @@ body {
 .control-panel .timetable .container {
   position: relative;
   display: grid;
-  grid-template-columns: 2% 11% 11% 11% 11% 11% 11% 11%;
+  grid-template-columns: 2% 13.7% 13.7% 13.7% 13.7% 13.7% 13.7% 13.7%;
   grid-template-rows: repeat(12, 1fr);
   gap: 0.2em;
   row-gap: 0.3em;
+  width: 100%;
 }
 .control-panel .timetable .container .cell {
   height: 80px;
@@ -128,6 +133,7 @@ body {
   height: 25%;
   background-color: #fff;
   border-radius: 15px;
+  box-shadow: 0px 0px 5px #ccc;
 }
 .control-panel .timetable #eventAdder #title {
   border: none;
@@ -179,6 +185,29 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 5px;
+}
+.control-panel .tasks {
+  width: 18%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+.control-panel .tasks .container {
+  width: 100%;
+}
+.control-panel .tasks .container h2 {
+  background-color: #fff;
+  padding: 0.5em 1.5em;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px #ccc;
+  margin-bottom: 2em;
+}
+.control-panel .tasks .container div {
+  width: 90%;
+  background-color: #fff;
+  height: 70px;
+  margin: 0.2em 0;
 }
 
 /*# sourceMappingURL=home.css.map */
