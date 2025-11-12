@@ -60,16 +60,16 @@ body {
 }
 
 .control-panel {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: 1;
-  gap: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .control-panel .timetable {
   background-color: #fff;
   height: 100%;
   padding: 1em;
   border-radius: 25px;
+  width: 80%;
 }
 .control-panel .timetable .container {
   position: relative;
@@ -118,11 +118,11 @@ body {
   cursor: pointer;
 }
 .control-panel .timetable .container .time {
-  font-size: 0.75em;
+  font-size: 0.6em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-self: flex-start;
   text-align: center;
 }
 .control-panel .timetable #eventAdder {
@@ -187,27 +187,44 @@ body {
   border-radius: 5px;
 }
 .control-panel .tasks {
-  width: 18%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 19%;
+  align-self: start;
+}
+.control-panel .tasks .container {
+  width: 100%;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-}
-.control-panel .tasks .container {
-  width: 100%;
 }
 .control-panel .tasks .container h2 {
   background-color: #fff;
   padding: 0.5em 1.5em;
   border-radius: 10px;
   box-shadow: 0px 0px 3px #ccc;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  font-weight: 100;
 }
 .control-panel .tasks .container div {
-  width: 90%;
+  width: 100%;
   background-color: #fff;
   height: 70px;
   margin: 0.2em 0;
+  box-shadow: 0px 0px 1px #ccc;
+  border-radius: 15px;
+}
+.control-panel .tasks .container button {
+  width: 100%;
+  padding: 1em 0.5em;
+  margin: 1em 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px #ccc;
 }
 
 /*# sourceMappingURL=home.css.map */
