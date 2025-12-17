@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umytpa | Home</title>
-    <!-- <script src="https://kit.fontawesome.com/406d692b05.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/406d692b05.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/home.css">
 </head>
 <body>
@@ -16,191 +16,78 @@
             <div class="links">
                 <a href="friends.html"><i class="fa-solid fa-user-group" style="color: #1E2151;"></i>Friends</a>
                 <a href="settings.html"><i class="fa-solid fa-gear" style="color: #1E2151;"></i>Profile</a>
+                <a href="home.html" class="current"><i class="fa-solid fa-home" style="color: #1E2151;"></i>Home</a>
             </div>
         </div>
     </nav>
 
     <div class="control-panel">
         <div class="tasks">
-            <div class="container">
+            <div class="tasks-container">
                 <h2 class="">Assignments</h2>
-                <div class="assignment"></div>
-                <div class="assignment"></div>
-                <div class="assignment"></div>
+                <div class="to-dos">
+                </div>
                 <button id="new-assignment">+</button>
+
+                <div id="add-window" class="hidden">
+                    <input type="text" id="task-add" placeholder="Add Title" autocomplete="off">
+                    <div class="action">
+                        <button class="action-btn" id="window-discard">Discard</button>
+                        <button class="action-btn" id="window-save">Save</button>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="timetable">
-            <div class="container">
-                <div class="cell"></div>
-                <div class="cell cell-date">
-                    <p class="date">3</p>
-                    <p>MON</p>
-                </div>
-                <div class="cell cell-date">
-                    <p class="date">4</p>
-                    <p>TUE</p>
-                </div>
-                <div class="cell cell-date">
-                    <p class="date">5</p>
-                    <p>WED</p>
-                </div>
-                <div class="cell cell-date">
-                    <p class="date">6</p>
-                    <p>THU</p>
-                </div>
-                <div class="cell cell-date">
-                    <p class="date">7</p>
-                    <p>FRI</p>
-                </div>
-                <div class="cell cell-date">
-                    <p class="date">8</p>
-                    <p>SAT</p>
-                </div>
-                <div class="cell cell-date">
-                    <p class="date">9</p>
-                    <p>SUN</p>
-                </div>
-                <div class="cell time">
-                    <p>7:30</p>
-                    <p>8:20</p>
-                </div>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <div class="cell time">
-                    <p>8:30</p>
-                    <p>9:20</p>
-                </div>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <div class="cell time">
-                    <p>9:30</p>
-                    <p>10:20</p>
-                </div>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <div class="cell time">
-                    <p>10:30</p>
-                    <p>11:20</p>
-                </div>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <div class="cell time">
-                    <p>11:30</p>
-                    <p>12:20</p>
-                </div>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <div class="cell time">
-                    <p>12:30</p>
-                    <p>13:20</p>
-                </div>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <div class="cell time">
-                    <p>13:30</p>
-                    <p>14:20</p>
-                </div>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <div class="cell time">
-                    <p>14:30</p>
-                    <p>15:20</p>
-                </div>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <div class="cell time">
-                    <p>15:30</p>
-                    <p>16:20</p>
-                </div>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <div class="cell time">
-                    <p>16:30</p>
-                    <p>17:20</p>
-                </div>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <div class="cell time">
-                    <p>17:30</p>
-                    <p>18:20</p>
-                </div>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
-                <button class="cell cell-btn"></button>
+            <div class="time-header"></div>
 
+            <div class="week-header">
+                <div class="day-name">
+                    MON
+                    <div class="day-date">  </div>
+                </div>
+                <div class="day-name">
+                    TUE
+                    <div class="day-date">  </div>
+                </div>
+                <div class="day-name">
+                    WED
+                    <div class="day-date">  </div>
+                </div>
+                <div class="day-name">
+                    THU
+                    <div class="day-date">  </div>
+                </div>
+                <div class="day-name">
+                    FRI
+                    <div class="day-date">  </div>
+                </div>
+                <div class="day-name">
+                    SAT
+                    <div class="day-date">  </div>
+                </div>
+                <div class="day-name">
+                    SUN
+                    <div class="day-date">  </div>
+                </div>
+            </div>
 
-                <div id="eventAdder" class="hidden">
-                    <input type="text" id="title" placeholder="Add Title">
-                    <div class="color-pick">
-                        <p>Choose Color</p>
-                        <input type="color" name="" id="color">
-                    </div>
-                    <div class="action">
-                        <button class="action-btn" id="discard">Discard</button>
-                        <button class="action-btn" id="save">Save</button>
-                    </div>
+            <div id="eventAdder" class="hidden">
+                <input type="text" id="title" placeholder="Add Title">
+                <div class="color-pick">
+                    <p>Choose Color</p>
+                    <input type="color" name="" id="color">
+                </div>
+                <div class="action">
+                    <button class="action-btn" id="discard">Discard</button>
+                    <button class="action-btn" id="save">Save</button>
                 </div>
             </div>
         </div>
-
     </div>
-    <script src="js/home.js"></script>
-    <script src="js/auth.js"></script>
+    <script src="js/dynamic-days.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/tasks.js"></script>
 </body>
 </html>

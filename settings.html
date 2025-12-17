@@ -16,6 +16,7 @@
             <div class="links">
                 <a href="friends.html" class=""><i class="fa-solid fa-user-group" style="color: #1E2151;"></i>Friends</a>
                 <a href="settings.html" class="current"><i class="fa-solid fa-gear" style="color: #1E2151;"></i>Profile</a>
+                <a href="home.html" class=""><i class="fa-solid fa-home" style="color: #1E2151;"></i>Home</a>
             </div>
         </div>
     </nav>
@@ -31,31 +32,31 @@
                 </div>
             </div>
             <div class="profile-info">
-                <h1 class="profile-name">Khalid Ibn Walid</h1>
-                <p class="profile-department">Information Systems</p>
+                <h1 class="profile-name" id="name"></h1>
+                <p class="profile-department" id="major"></p>
             </div>
         </div>
 
         <div class="details-grid">
             <div class="detail-row">
                 <div class="detail-label">Student ID</div>
-                <div class="detail-value">250118021</div>
+                <div class="detail-value" id="student-id"></div>
             </div>
             <div class="detail-row">
                 <div class="detail-label">Birth Date</div>
-                <div class="detail-value">12.01.2008</div>
+                <div class="detail-value" id="birth-date"></div>
             </div>
             <div class="detail-row">
                 <div class="detail-label">Advisor</div>
-                <div class="detail-value">Akniet Mussakhan</div>
+                <div class="detail-value" id="advisor"></div>
             </div>
             <div class="detail-row">
                 <div class="detail-label">Email</div>
-                <div class="detail-value">alisherkanadiI@gmail.com</div>
+                <div class="detail-value" id="student-email"></div>
             </div>
             <div class="detail-row">
                 <div class="detail-label">Init. Pass.</div>
-                <div class="detail-value">VGHAK092</div>
+                <div class="detail-value" id="student-password"></div>
             </div>
         </div>
 
@@ -66,7 +67,9 @@
                 <option value="dark">Dark</option>
                 <option value="light">Light</option>
             </select>
+            <button id="logout">Log Out</button>
         </div>
     </div>
+    <script type="module" src="js/profileData.js"></script>
 </body>
 </html>
